@@ -20,7 +20,9 @@ const Qualification = () => {
             <div className="qualification__data">
               <div>
                 <h3 className="qualification__title"></h3>
-                <span className="qualification__subtitle">openclaasroom</span>
+                <span className="qualification__subtitle">
+                  OC integrateur web
+                </span>
                 <div className="qualification__calender">
                   <i className="uil uil-calendar-alt"></i>2024 - present
                 </div>
@@ -40,18 +42,20 @@ const Qualification = () => {
               </div>
               <div>
                 <h3 className="qualification__title"></h3>
-                <span className="qualification__subtitle">simplon swift</span>
+                <span className="qualification__subtitle">Simplon swift</span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i>2024 - present
+                  <i className="uil uil-calendar-alt"></i>02.2023 - 05.2023
                 </div>
               </div>
             </div>
             <div className="qualification__data">
               <div>
                 <h3 className="qualification__title"></h3>
-                <span className="qualification__subtitle">devops 2</span>
+                <span className="qualification__subtitle">
+                  BAC +1 spécialité DevOps
+                </span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i>2024 - present
+                  <i className="uil uil-calendar-alt"></i>2022 - 2023
                 </div>
               </div>
 
@@ -69,9 +73,11 @@ const Qualification = () => {
               </div>
               <div>
                 <h3 className="qualification__title"></h3>
-                <span className="qualification__subtitle">devops</span>
+                <span className="qualification__subtitle">
+                  BAC spécialité DevOps
+                </span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i>2024 - present
+                  <i className="uil uil-calendar-alt"></i>2021 - 2022
                 </div>
               </div>
             </div>

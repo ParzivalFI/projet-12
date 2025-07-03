@@ -1,11 +1,11 @@
 import React from "react";
 import "./home.css";
-import AboutImg from "../../assets/cobra-shenmue-3-astroboy-interview-retro-avec-shib_7377.png";
+import AboutImg from "../../assets/profil.png";
 import Info from "../info/Info";
 
 const Home = () => {
   return (
-    <section className="about section" id="about">
+    <section className="about section" id="profil">
       <h2 className="section__title">Profil</h2>
       <span className="section__subtitle">Mon introduction</span>
 
@@ -14,10 +14,13 @@ const Home = () => {
         <div className="about__data">
           <Info />
           <p className="about__description">
-            azdfi pfaezinezi nfzn eviv nnv infi onie cnic no iz nc eio noz
-            ecnoizcnoi zcnozi cnzioc nzeoi cnze oicn zoiec nzo icnzo icnze oic
-            nzeoi cnz oic nz eocno izcnoi neznoi dazd cazdaz dad adzd azdada azd
-            az d azd ad a dazd adz azd ad
+            Je suis passionné d'informatique depuis mon enfance. Je faisais déjà
+            du code quand j'étais petit sur Garrysmod. Cette passion ne s'est
+            jamais arrêtée, même pendant mon CAP et mon bac en Électrotechnique
+            j'ai toujours voulu faire de l'informatique. Après ça, je me suis
+            dit qu'il fallait que je me reconverti et c'est là que j'ai refait
+            un bac en DevOps, pendant mon bac DevOps, j'ai vu la lumière, et
+            c'est là que j'ai compris. Je veux devenir Intégrateur web.
           </p>
 
           {/* <a href="" className="button button--flex"></a> */}

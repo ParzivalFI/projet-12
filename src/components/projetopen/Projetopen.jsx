@@ -34,7 +34,7 @@ const Projetopen = () => {
       id: 0,
       title: "Booki - Agence de Voyage",
       description:
-        "Booki est un projet qui m'a permis d'explorer les fondements du développement web tout en travaillant sur un produit ayant une réelle utilité pour les utilisateur-ices. Ce projet m'a permis de renforcer mes compétences en HTML, CSS et JavaScript, tout en découvrant l'importance de l'accessibilité et du web sémantique.",
+        "Booki est un projet qui m'a permis d'explorer les fondements du développement web tout en travaillant sur un produit ayant une réelle utilité pour les utilisateurs. Ce projet m'a permis de renforcer mes compétences en HTML, CSS, tout en découvrant l'importance de l'accessibilité. Grâce à ce projet, j'ai pu transformer une maquette en site web accessible et adaptable à tous les écrans. Une structuration du contenu avec HTML sémantique et une mise en page responsive en CSS, une fidélité au design Figma fournie. Respect de l’accessibilité et compatibilité multi-appareils",
       videoDesktop: BookiDesk,
       githubLink: "https://github.com/ParzivalFI/p3",
     },
@@ -42,7 +42,7 @@ const Projetopen = () => {
       id: 1,
       title: "OhMyFood - Site en mobile first",
       description:
-        "OhMyFood est un projet qui m'a permis de me plonger dans le concept du mobile first, en créant un site responsive destiné aux amateur-ices de gastronomie. J'ai été ravie de relever le défi de concevoir un site qui s'adapte parfaitement aux appareils mobiles, tout en conservant une esthétique attrayante.",
+        "OhMyFood est un projet qui m'a permis de me plonger dans le concept mobile first en créant un site web responsive pour les gourmands. Ce projet utilise HTML, SASS et des animations CSS modernes. Il m'a permis de mettre en place un système de navigation entre les pages et d'ajouter des animations CSS fluides pour améliorer l'expérience utilisateur. J'ai également structuré mon code HTML5 et organisé mon CSS avec SASS, et une validation HTML/CSS via les outils W3C.",
       videoDesktop: OMFDesk,
       githubLink: "https://github.com/ParzivalFI/P4",
       layout: "right",
@@ -51,14 +51,14 @@ const Projetopen = () => {
       id: 2,
       title: "Kasa - Locations Immobilières",
       description:
-        "Kasa est un projet axé sur la location immobilière, conçu pour répondre aux besoins des voyageur-euses modernes à la recherche d'un hébergement de qualité. J'ai particulièrement apprécié l'approche centrée sur l'utilisateur-ice, où chaque élément de l'interface visait à faciliter la recherche de propriétés. Créer une expérience fluide et agréable a été un véritable défi, mais aussi une source de motivation.",
+        "Kasa est un projet axé sur la location immobilière, conçu pour répondre aux besoins des voyageurs modernes en quête d'un hébergement de qualité. Dans ce projet, j'ai dû structurer un projet front-end complet en React. J'ai également pu apprendre à créer des composants réutilisables. J'ai également ajouté des animations CSS pour améliorer l'expérience utilisateur et configurer le routage et les appels d'API.",
       videoDesktop: KasaDesk,
       githubLink: "https://github.com/ParzivalFI/Projet8",
     },
   ];
 
   return (
-    <div className="projects">
+    <div className="projects" id="projet">
       <h2 className="section__title">Projet</h2>
       <span className="section__subtitle">expérience</span>
       <Slider {...settings}>

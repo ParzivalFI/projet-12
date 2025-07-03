@@ -3,7 +3,7 @@ import React from "react";
 const Frontend = () => {
   return (
     <div className="skills__content">
-      <h3 className="skills__title">Frontend developer</h3>
+      <h3 className="skills__title">Frontend</h3>
 
       <div className="skills__box">
         <div className="skills__group">
@@ -32,8 +32,8 @@ const Frontend = () => {
                 Mon approche se concentre sur le css sur la performance et la
                 maintenabilité du code en privilégiant SCSS pour garantir des
                 interfaces visuellement attrayantes et réactives. Le CSS et le
-                SCSS ne sont pas de simples outils pour moi ; ce sont des moyens
-                puissants de transformer des idées en réalité visuelle.
+                SCSS ne sont pas de simples outils pour moi ; tout est possible
+                dans le CSS, il faut juste de l'imagination.
               </span>
             </div>
           </div>
@@ -42,7 +42,7 @@ const Frontend = () => {
             <div>
               <h3 className="skills__name">
                 <i class="uil uil-java-script"></i>
-                JS
+                Javascript
               </h3>
               <span className="skills__level">
                 JavaScript a la réputation d'être un langage difficile à
@@ -60,7 +60,7 @@ const Frontend = () => {
             <div>
               <h3 className="skills__name">
                 <i class="uil uil-react"></i>
-                react
+                React
               </h3>
               <span className="skills__level">
                 Des fonctionnalités comme useState, usenavigate, useEffect ou
@@ -75,7 +75,7 @@ const Frontend = () => {
             <div>
               <h3 className="skills__name">
                 <i class="bx bx-git-branch"></i>
-                git
+                Git
               </h3>
               <span className="skills__level">
                 Git m'a aidé dans ma gestion de travail via des git push. Je

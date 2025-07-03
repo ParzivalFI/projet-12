@@ -4,7 +4,7 @@ const Projetcard = ({ project }) => {
   const { title, description, githubLink, videoDesktop } = project;
 
   return (
-    <section className="slide" id="projet">
+    <section className="slide">
       <div className="project_card">
         <div className="project_image_container">
           <video

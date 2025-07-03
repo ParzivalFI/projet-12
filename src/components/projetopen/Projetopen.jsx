@@ -58,7 +58,7 @@ const Projetopen = () => {
   ];
 
   return (
-    <div className="projects" id="projet">
+    <div className="projects section" id="projet">
       <h2 className="section__title">Projet</h2>
       <span className="section__subtitle">expérience</span>
       <Slider {...settings}>

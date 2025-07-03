@@ -16,29 +16,29 @@ const Header = () => {
           <ul className="nav__list grid">
             <li className="nav__item">
               <a href="#profil" className="nav__link">
-                <i className="bx bx-user nav__icon"></i> Profil
+                <i className="bx bxs-user nav__icon"></i> Profil
               </a>
             </li>
 
             <li className="nav__item">
               <a href="#skills" className="nav__link">
-                <i className="bx bx-home nav__icon"></i> Skills
+                <i className="bx bxs-file nav__icon"></i> Skills
               </a>
             </li>
             <li className="nav__item">
               <a href="#qualification" className="nav__link">
-                <i className="bx bx-home nav__icon"></i> Qualification
+                <i className="bx bxs-briefcase nav__icon"></i> Qualification
               </a>
             </li>
             <li className="nav__item">
               <a href="#projet" className="nav__link">
-                <i className="bx bx-home nav__icon"></i> Projet
+                <i className="bx bxs-folder-open nav__icon"></i> Projet
               </a>
             </li>
 
             <li className="nav__item">
               <a href="#contact" className="nav__link">
-                <i className="bx bx-home nav__icon"></i> Contact
+                <i className="bx bxs-envelope nav__icon"></i> Contact
               </a>
             </li>
           </ul>

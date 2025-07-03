@@ -2,6 +2,10 @@
     max-width: 768px;
 }
 
+.section {
+    padding: 6rem 0 2rem;
+}
+
 .qualification__tabs {
     display: flex;
     justify-content: center;

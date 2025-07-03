@@ -8,7 +8,7 @@
   --title-color-dark: hsl(var(--hue), var(--sat), 0%);
   --text-color: hsl(var(--hue), var(--sat), 46%);
   --body-color: hsl(var(--hue), var(--sat), 98%);
-  --container-color: #fff: ;
+  --container-color: #fff;
 
   --body-font: "Poppins", sans-serif;
 
@@ -94,6 +94,11 @@ button {
   cursor: pointer;
   border: none;
   outline: none;
+  cursor: pointer;
+  border: none;
+  padding: 0.5rem;
+  outline: none;
+  border-radius: 0.75rem;
 }
 
 img {
@@ -102,7 +107,7 @@ img {
 }
 
 .section {
-  padding: 6rem 0 2rem;
+  padding: 4rem 0 2rem;
 }
 
 .section__title {

@@ -7,6 +7,8 @@ import Home from "./components/home/Home";
 import Projetopen from "./components/projetopen/Projetopen";
 import Qualification from "./components/qualification/Qualification";
 import Skills from "./components/skills/Skills";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function App() {
   return (

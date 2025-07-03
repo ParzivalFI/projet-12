@@ -1,52 +1,37 @@
-import React, { useEffect, useState } from "react";
-import { projectsData, projectsnav } from "../projetcard/data";
-import WorkItems from "./WorkItems";
+import React from "react";
 
-const Projetcard = () => {
-  const [item, setItem] = useState({ name: "all" });
-  const [projects, setProjects] = useState([]);
-  const [active, setActive] = useState(0);
-
-  useEffect(() => {
-    if (item.name === "all") {
-      setProjects(projectsData);
-    } else {
-      const newprojects = projectsData.filter((project) => {
-        return project.category === item.name;
-      });
-      setProjects(newprojects);
-    }
-  }, [item]);
-
-  const handleClick = (e, index) => {
-    setItem({ name: e.target.textContent });
-    setActive(index);
-  };
+const Projetcard = ({ project }) => {
+  const { title, description, githubLink, videoDesktop } = project;
 
   return (
-    <div>
-      <div className="work__filters">
-        {projectsnav.map((item, index) => {
-          return (
-            <span
-              onClick={(e) => {
-                handleClick(e, index);
-              }}
-              className={`${active === index ? "active-work" : ""} work__item`}
-              key={index}
-            >
-              {item.name}
-            </span>
-          );
-        })}
-      </div>
+    <section className="slide" id="projet">
+      <div className="project_card">
+        <div className="project_image_container">
+          <video
+            className="project_video"
+            src={videoDesktop}
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
+        </div>
 
-      <div className="work__container conainer grid">
-        {projects.map((item) => {
-          return <WorkItems item={item} key={item.id} />;
-        })}
+        <div className="project_text">
+          <h3 className="project_title">{title}</h3>
+          <p className="project_description">{description}</p>
+        </div>
+
+        <a
+          href={githubLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="project_github"
+        >
+          Voir sur GitHub
+        </a>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -5,7 +5,7 @@ import Info from "../info/Info";
 
 const Home = () => {
   return (
-    <section className="home section" id="home">
+    <section className="about section" id="about">
       <h2 className="section__title">Profil</h2>
       <span className="section__subtitle">Mon introduction</span>
 

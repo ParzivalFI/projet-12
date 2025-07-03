@@ -32,8 +32,13 @@ const Header = () => {
               </a>
             </li>
             <li className="nav__item">
-              <a href="#portfolio" className="nav__link">
-                <i className="bx bx-home nav__icon"></i> Portfolio
+              <a href="#qualification" className="nav__link">
+                <i className="bx bx-home nav__icon"></i> Qualification
+              </a>
+            </li>
+            <li className="nav__item">
+              <a href="#projet" className="nav__link">
+                <i className="bx bx-home nav__icon"></i> Projet
               </a>
             </li>
 
@@ -46,10 +51,10 @@ const Header = () => {
 
           <i
             class="uil uil-times nav__close"
-            onclick={() => setToggle(!Toggle)}
+            onClick={() => setToggle(!Toggle)}
           ></i>
         </div>
-        <div className="nav__toggle" onclick={() => setToggle(!Toggle)}>
+        <div className="nav__toggle" onClick={() => setToggle(!Toggle)}>
           <i class="uil uil-apps"></i>
         </div>
       </nav>

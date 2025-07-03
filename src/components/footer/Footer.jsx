@@ -11,7 +11,7 @@ const Footer = () => {
             className="home__social-icon"
             target="_blank"
           >
-            <i class="uil uil-github-alt"></i>
+            <i class="uil uil-github"></i>
           </a>
         </div>
         <span className="footer__copy">

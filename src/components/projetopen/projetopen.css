@@ -1,136 +1,145 @@
-/* SLIDE CONTAINER */
-.slide {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 0 0;
-}
-
-/* PROJECT CARD */
 .project_card {
-    width: 100%;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 1.5rem;
     max-width: 800px;
-    min-height: 700px;
+    margin: 2rem auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    border: 2px solid #000;
-    border-radius: 16px;
-    background-color: #fff;
-    padding: 1.5rem;
-    box-sizing: border-box;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    gap: 1rem;
 }
 
-/* VIDEO CONTAINER */
 .project_image_container {
     width: 100%;
-    height: 300px;
-    border: 2px solid #000;
-    border-radius: 10px;
-    background-color: #000; /* Fond noir pour les bandes autour de la vidéo */
+    aspect-ratio: 16 / 9;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border-radius: 12px;
 }
 
 .project_video {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Voir toute la vidéo sans zoom */
+    object-fit: cover;
+    border-radius: 12px;
 }
 
-/* TEXT CONTAINER */
 .project_text {
-    width: 100%;
-    height: auto;
-    margin-top: 1.5rem;
-    padding: 1rem;
-    border: 2px solid #000;
-    border-radius: 8px;
-    text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    background-color: #fff;
+    gap: 1rem;
 }
 
 .project_title {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     font-weight: bold;
-    margin-bottom: 0.5rem;
-    text-decoration: underline;
+    margin: 0;
+    color: #222;
 }
 
-.project_description {
-    font-size: 1rem;
-    color: #444;
+.project_objectif,
+.project_travaux {
+    text-align: left;
 }
 
-/* GITHUB BUTTON */
+.project_objectif p {
+    margin-top: 0.4rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.project_travaux ul {
+    margin-top: 0.5rem;
+    padding-left: 1.2rem;
+}
+
+.project_travaux li {
+    list-style-type: disc;
+    margin-bottom: 0.4rem;
+    color: #333;
+    font-weight: 500;
+}
+
+.project_github_container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+
 .project_github {
-    margin-top: 1.5rem;
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
     padding: 0.6rem 1.2rem;
-    font-weight: bold;
-    border: 2px solid #000;
-    border-radius: 6px;
-    text-decoration: underline;
-    color: #000;
-    background-color: #fff;
-    transition: background-color 0.3s ease;
+    border-radius: 8px;
+    /* transition: background 0.3s ease; */
+    font-weight: 600;
 }
 
 .project_github:hover {
-    background-color: #f0f0f0;
+    background-color: #333;
 }
 
-/* RESPONSIVE ADJUSTMENTS */
-@media screen and (max-width: 1024px) {
+@media (max-width: 600px) {
     .project_card {
-        max-width: 700px;
-        min-height: 650px;
-        padding: 1.2rem;
-    }
-
-    .project_image_container {
-        height: 250px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .project_card {
-        max-width: 600px;
-        min-height: 600px;
         padding: 1rem;
     }
 
-    .project_image_container {
-        height: 220px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .project_card {
-        max-width: 90%;
-        min-height: 550px;
-        padding: 0.8rem;
-    }
-
-    .project_image_container {
-        height: 200px;
-    }
-
     .project_title {
-        font-size: 1.2rem;
-    }
-
-    .project_description {
-        font-size: 0.95rem;
+        font-size: 1.4rem;
     }
 
     .project_github {
         padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .project_card {
+        padding: 1rem;
+        border-radius: 12px;
+        gap: 1.2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .project_title {
+        font-size: 1.4rem;
+    }
+
+    .project_video {
+        /* aspect-ratio: 16 / 9; */
+        object-fit: cover;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .project_text {
+        gap: 0.8rem;
+    }
+
+    .project_travaux ul {
+        padding-left: 1rem;
+    }
+
+    .project_travaux li {
+        font-size: 0.95rem;
+    }
+
+    .project_objectif p {
+        font-size: 0.95rem;
+    }
+
+    .project_github_container {
+        justify-content: center;
+    }
+
+    .project_github {
+        padding: 0.5rem 1rem;
+        font-size: 0.95rem;
+        width: 100%;
+        text-align: center;
     }
 }
